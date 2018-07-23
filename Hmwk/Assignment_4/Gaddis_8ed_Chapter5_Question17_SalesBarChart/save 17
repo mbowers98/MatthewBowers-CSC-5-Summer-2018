@@ -1,0 +1,77 @@
+/* 
+ * File:   main.cpp
+ * Author: Dr. Mark E. Lehr
+ * Created on May 29th, 2018, 11:20 AM
+ * Purpose:  CPP Template
+ *           To be copied for each project
+ */
+
+//System Libraries
+#include <iostream> //I/O Library -> cout,endl
+#include <iomanip>  //Format Library
+using namespace std;//namespace I/O stream library created
+
+//User Libraries
+
+//Global Constants
+//Math, Physics, Science, Conversions, 2-D Array Columns
+
+//Function Prototypes
+
+//Execution Begins Here!
+int main(int argc, char** argv) {
+    //Declare Variables
+int sales = 0;
+int store = 0;
+int star;
+
+int store1 =0;
+int store2 =0;
+int store3 =0;
+int store4 =0;
+int store5 =0;
+
+int Sales1;
+int Sales2;
+int Sales3;
+int Sales4;
+int Sales5;
+cout<< "Sales for the Store 1\n";
+        cin >> Sales1;
+cout<< "Sales for the Store 2\n";
+        cin >> Sales2;
+cout<< "Sales for the Store 3\n";
+        cin >> Sales3;
+cout<< "Sales for the Store 4\n";
+        cin >> Sales4;
+cout<< "Sales for the Store 5\n";
+        cin >> Sales5;
+    
+cout << "SALES BAR CHART\n"
+        "(Each * = $100)\n";
+
+int star1= Sales1/100;
+int star2= Sales2/100;
+int star3=Sales3/100;
+int star4= Sales4/100;
+int star5= Sales5/100;
+
+
+
+for (int y = 0; y < star; y++)
+  cout << "*" << endl;
+cout << "Store 1" << ":"<< star1 << endl;
+cout << "Store 2" << ":"<< star2 << endl;
+cout << "Store 3" << ":"<< star3 << endl;
+cout << "Store 4" << ":"<< star4 << endl;
+cout << "Store 5" << ":"<< star4 << endl ;
+
+
+        
+    //Initial Variables
+    
+    //Map/Process Inputs to Outputs
+
+    //Exit program!
+    return 0;
+}

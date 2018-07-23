@@ -1,0 +1,44 @@
+/* 
+ * File:   main.cpp
+ * Author: Dr. Mark E. Lehr
+ * Created on May 29th, 2018, 11:20 AM
+ * Purpose:  CPP Template
+ *           To be copied for each project
+ */
+
+//System Libraries
+#include <iostream> //I/O Library -> cout,endl
+#include <iomanip>  //Format Library
+using namespace std;//namespace I/O stream library created
+
+//User Libraries
+
+//Global Constants
+//Math, Physics, Science, Conversions, 2-D Array Columns
+
+//Function Prototypes
+
+//Execution Begins Here!
+int main(int argc, char** argv) 
+{
+   short Y=10; //This is the variable used to determined how many "+" are used for each line: Values 1-7
+   short X=10; //This is the variable used to determined how many "+" are used for each line: Values 1-7
+    cout << "Pattern A\n"
+            "=======================";
+    for (int X=0; X<10; X++)
+    {
+        for(int Y=0; Y<X;Y++)
+        cout<< "+" ;
+        cout<<endl;
+    }
+    cout <<"Pattern B\n"
+    "=======================\n";
+    for(int X=10; X>=1; X--)
+    {
+        for(int Y=1; Y<X;Y++)
+        cout<< "+" ;
+        cout<<endl;
+    }
+    system("pause");
+    return 0;
+}

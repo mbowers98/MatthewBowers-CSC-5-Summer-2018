@@ -1,0 +1,51 @@
+/* 
+ * File:   main.cpp
+ * Author: Dr. Mark E. Lehr
+ * Created on May 29th, 2018, 11:20 AM
+ * Purpose:  CPP Template
+ *           To be copied for each project
+ */
+
+//System Libraries
+#include <iostream> //I/O Library -> cout,endl
+#include <iomanip>  //Format Library
+using namespace std;//namespace I/O stream library created
+
+//User Libraries
+
+//Global Constants
+//Math, Physics, Science, Conversions, 2-D Array Columns
+
+//Function Prototypes
+
+//Execution Begins Here!
+int main(int argc, char** argv) {
+    //Declare Variables
+
+    //Initial Variables
+        int Guess;
+    int seed;
+    seed = time (0);
+    srand(seed);
+    int RandomAnswer = rand() % 100 + 1;
+    int NumberGuesses;
+     cout << "Guess a number between 1 - 100\n";
+    do {
+       
+                
+        cin >> Guess;
+        NumberGuesses++;
+        
+        if (Guess> RandomAnswer)
+            cout << "Your Guess Is To High!\n";
+        else if (Guess < RandomAnswer)
+            cout << "Your Guess is to low!\n";
+    }
+    while (RandomAnswer != Guess);
+    cout << "Thats the correct guess!\n";
+    cout << "It Took You " << NumberGuesses << " Attempt(s) To Get it Correct!\n";
+    //Map/Process Inputs to Outputs
+
+    //Exit program!
+    return 0;
+}
