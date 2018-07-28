@@ -19,16 +19,31 @@ using namespace std;//namespace I/O stream library created
 //Function Prototypes
 
 //Execution Begins Here!
+
 int main(int argc, char** argv) {
-    //Declare Variables
-
-    //Initial Variables
     
-    //Map/Process Inputs to Outputs
 
-    //Display Outputs
-    cout<<"Hello World"<<endl;
     
     //Exit program!
     return 0;
 }
+
+void sortArray(int array[], int size)
+ {
+ bool swap;
+ int temp;
+ do
+ {
+ swap = false;
+ for (int count = 0; count < (size − 1); count++)
+ {
+ if (array[count] > array[count + 1])
+ {
+ temp = array[count];
+ array[count] = array[count + 1];
+ array[count + 1] = temp;
+ swap = true; 
+ }
+ }
+ } while (swap);
+ } 

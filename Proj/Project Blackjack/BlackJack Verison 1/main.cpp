@@ -23,7 +23,8 @@ using namespace std;//namespace I/O stream library created
 //Function Prototypes
 
 //Execution Begins Here!
-int main(int argc, char** argv) {
+int main(int argc, char** argv) 
+{
     string Name1;// This is the name of the player
     short Card2,Card3,Card4;// Card Values Drawn MAX DRAWN is 4 per player
     short p1total;
@@ -239,4 +240,6 @@ int main(int argc, char** argv) {
          break;
      }
   
-    
+    }
+     }
+     
